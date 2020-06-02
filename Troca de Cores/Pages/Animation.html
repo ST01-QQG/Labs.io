@@ -1,0 +1,280 @@
+<!Doctype html>
+<html>
+    <head>
+        <link href="../styles/animationstyle.css" type="text/css" rel="stylesheet"/>
+        <link href="../styles/globalstyle.css" type="text/css" rel="stylesheet"/>
+        <script src="../scripts/jquery-3.5.1.js"></script>
+    </head>
+    <body id="crubble-matrix" class="bubble-matrix">
+        <!--<div class="qenclosure">-->
+            <div id="start"><strong>Iniciar</strong></div>
+            <div id="bubble" class="bubble b1">
+                <span>
+                    <strong>Q</strong>
+                </span>
+            </div>
+            <div class="bubble b2">
+                <span>
+                    <strong>Q</strong>
+                </span>
+            </div>
+            <div class="bubble b3">
+                <span>
+                    <strong>G</strong>
+                </span>
+            </div>
+            <div class="bubble b4">
+                <span>
+                    <strong>L</strong>
+                </span>
+            </div>
+            <div id="TextBubble" class="b5">
+                <span>
+                    <div class="qmask"></div>
+                    <h3>Quadrangular Q Garage Em Rede <br/> Labs</h3>
+                </span>
+            </div>
+            <div class="qlogo">
+                <h3>Construido por: </h3>
+                <br /> <br />
+                <img src="../images/qlogo.png" />
+            </div>
+            <div class="b6">
+                <span>
+                    <h3>
+                    <strong>Tema:</strong> "Conte a sua história." <br/> <br/>
+                    <strong>Projecto:</strong> "Troca de Cores" <br/> <br/>
+                    <strong>Versão:</strong> 1.0.0 <br/>
+                    </h3>
+                </span>
+            </div>
+            <div id="EndBubble" class="b7">
+                <span>
+                    <h3>
+                    Esta história chegou ao fim. <br/>
+                    Deseja contar a sua?<br/><br/>
+                    Estamos comunicáveis por <span id="red-light">chamada</span>, <span id="blue-light">SMS</span>, <span id="green-light">Email</span>, e <span id="black-light">Telegram</span>:<br/>
+                    <br/>
+                    Tel.: (+258) <span>84 61 17 179</span> /  (+258) <span>86 72 56 085</span> <br/>
+                    Email: <span>quadrangular.garage@gmail.com</span> <br/> <br/>
+                    Telegram: <span>requera por email ou por algum dos meio aqui disponíveis que <br/>
+                        o enviaremos para si o mais rápido possível.</span> <br/>
+                    <br/>
+
+                    Aprecie a nossa página: <br/>
+                    Facebook: <a href="https://www.facebook.com/qqpgrs">Quadrangular Q Garage</a>
+                    </h3>
+                </span>
+            </div>
+        <!--</div>-->
+        <script>
+            
+            $( "#start").click(function() {
+                
+                //Start
+
+                $( ".bubble" ).fadeTo(1000, 1);
+                $( ".bubble" ).css("display", "inline");
+                $( "#TextBubble" ).fadeIn("slow");
+                $( "#TextBubble" ).css("display", "inline");
+                $( "#start" ).fadeOut("slow");
+                $( "#start" ).css("display", "none");
+
+                //1
+
+                console.log("A");
+                delay1 = 1000;
+                $( ".b1" ).delay(delay1).animate({
+                    left: "42.1875em",
+                    top: "18.75em",
+                    padding: "0.0625em 0.5em",
+                }, 1000);
+                $( ".b1 strong" ).delay(delay1+1000).animate({
+                    "font-size": "0.5em",
+                    top: "-0.125em",
+                }, 1000);
+                delay1 = 750;
+                $( ".b1" ).delay(delay1).animate({
+                    left: "40.15625em",
+                }, 1000);
+                delay1 = 350;
+                $( ".b1" ).delay(delay1).animate({
+                    padding: "0.9375em 1.4375em",
+                    left: "36.8625em", //subtracted 0.2em
+                    top: "17.8125em",
+                }, 1000);
+                delay1 = 1500;
+                $( ".b1" ).delay(delay1).animate({
+                    left: "28.5625em",
+                }, 750);
+                delay1 = 1500;
+                $( ".b1" ).delay(delay1).animate({
+                    left: "52.625em",
+                }, 2000);
+                delay1 = 250;
+                $( ".b1" ).delay(delay1).fadeOut(500);
+
+                //2
+
+                console.log("B");
+                delay2 = 1250;
+                $( ".b2" ).delay(delay2).animate({
+                    left: "42.1875em",
+                    top: "18.75em",
+                    padding: "0.0625em 0.5em",
+                }, 1000);
+                $( ".b2 strong" ).delay(delay2+1000).animate({
+                    "font-size": "0.5em",
+                    top: "-0.125em",
+                }, 1000, function() {
+                    $( ".b1" ).css("background-color", "#3E3EC0");
+                    $( ".b1 strong" ).css("color", "#CCC");
+                    
+                    $( ".b2" ).css("background-color", "#3E3EC0");
+                    //$( ".b2 strong" ).css("color", "#80BF40");
+                });
+                delay2 = 250;
+                $( ".b2" ).delay(delay2).animate({
+                    left: "41.59375em",
+
+                }, 1000);
+                delay2 = 350;
+                $( ".b2" ).delay(delay2).animate({
+                    padding: "0.9375em 1.4375em",
+                    left: "40.23125em", //subtracted 0.2em
+                    top: "17.8125em",
+                }, 1000);
+                delay2 = 200;
+                $( ".b2" ).delay(delay2).fadeOut("slow");
+
+                //3
+
+                console.log("C");
+                delay3 = 1500;
+                $( ".b3" ).delay(delay3).animate({
+                    left: "42.1875em",
+                    top: "18.75em",
+                    padding: "0.0625em 0.5em",
+                }, 1000);
+                $( ".b3 strong" ).delay(delay3+1000).animate({
+                    "font-size": "0.5em",
+                    top: "-0.125em",
+                }, 1000, function() {
+                    $( ".b1" ).css("background-color", "#4161A0");
+                    //$( ".b1 strong" ).css("color", "#80BF40");
+                    
+                    $( ".b2" ).css("background-color", "#4161A0");
+                    //$( ".b2 strong" ).css("color", "#80BF40");
+
+                    $( ".b3" ).css("background-color", "#4161A0");
+                    //$( ".b3 strong" ).css("color", "#80BF40");
+                });
+                delay3 = 250;
+                $( ".b3" ).delay(delay3).animate({
+                    left: "42.90625em",
+                }, 1000);
+                delay3 = 350;
+                $( ".b3" ).delay(delay3).animate({
+                    padding: "0.9375em 1.4375em",
+                    left: "43.55755em", //added 0.2em-->
+                    top: "17.8125em",
+                }, 1000);
+                delay3 = 200;
+                $( ".b3" ).delay(delay3).fadeOut("slow");
+
+                //4
+
+                console.log("D");
+                delay4 = 1750;
+                $( ".b4" ).delay(delay4).animate({
+                    left: "42.1875em",
+                    top: "18.75em",
+                    padding: "0.0625em 0.5em",
+                }, 1000);
+                $( ".b4 strong" ).delay(delay4+1000).animate({
+                    "font-size": "0.5em",
+                    top: "-0.125em",
+                }, 1000, function() {
+                    $( ".b1" ).css("background-color", "#213151");
+                    //$( ".b1 strong" ).css("color", "#80BF40");
+                    
+                    $( ".b2" ).css("background-color", "#213151");
+                    //$( ".b2 strong" ).css("color", "#80BF40");
+
+                    $( ".b3" ).css("background-color", "#213151");
+                    //$( ".b3 strong" ).css("color", "#80BF40");
+                    
+                    $( ".b4" ).css("background-color", "#213151");
+                    //$( ".b4 strong" ).css("color", "#80BF40");
+                });
+                delay4 = 250;
+                $( ".b4" ).delay(delay4).animate({
+                    left: "44.40625em",
+                }, 1000);
+                $( "#start" ).css("display", "inline-block");
+                delay4 = 350;
+                $( ".b4" ).delay(delay4).animate({
+                    padding: "0.9375em 1.4375em",
+                    left: "46.9125em", //added 0.4em
+                    top: "17.8125em",
+                }, 1000);
+                delay4 = 200;
+                $( ".b4" ).delay(delay4).fadeOut("slow");
+
+                //5
+
+                delay5 = 1000;
+                $( ".b5" ).delay(delay5).fadeTo(750, 1);
+                delay5 = 10000;
+                $( ".qmask" ).delay(delay5).animate({
+                    left: "52.59375em",
+                    width: "0em",
+                }, 1750);
+                delay5 = 11000;
+                $( ".b5" ).delay(delay5).fadeOut(750);
+                
+                //6
+
+                delay6 = delay5+3250;
+                $( ".qlogo h3").delay(delay6).fadeTo(1000 , 1);
+                $( ".qlogo img" ).delay(delay6).animate({
+                    left: "110%",
+                    top: "9.0625em",
+                    width: "45%",
+                    height: "45%",
+                }, 1000);
+                delay6 = 5000;
+                $( ".qlogo h3").delay(delay6).fadeTo(1000 , 0);
+                $( ".qlogo img" ).delay(delay6).animate({
+                    left: "42.1875em",
+                    top: "15.625em",
+                    width: "0%",
+                    height: "0%",
+                }, 1000, function () {
+                    
+                    //7
+                    
+                    delay7 = 1000;
+                    $( ".b6").delay(delay7).fadeTo(1000, 1);
+                    delay7 = 3000;
+                    $( ".b6").delay(delay7).fadeTo(1000, 0); 
+
+                    delay8 = 8000;
+                    $( ".b7").delay(delay8).fadeTo(1000, 1);
+
+                    //End
+                    
+                    delayEnd = 5000;
+                    $( ".bubble" ).delay(delayEnd).fadeTo(0, 1);
+                    $( ".bubble" ).delay(delayEnd).css("display", "none");
+                    $( "#TextBubble" ).delay(delayEnd).fadeOut("slow");
+                    $( "#TextBubble" ).delay(delayEnd).css("display", "none");
+                    //$( "#start" ).delay(delayEnd).fadeIn("slow");
+                    //$( "#start" ).delay(delayEnd).css("display", "inline");
+                    });
+
+            });
+            
+        </script>
+    </body>
+</html>
