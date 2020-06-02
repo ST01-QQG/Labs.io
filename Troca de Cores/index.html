@@ -1,0 +1,26 @@
+<!Doctype html>
+<html>
+    <head>
+        <link href="./styles/entrystyle.css" type="text/css" rel="stylesheet"/>
+        <link href="./styles/globalstyle.css" type="text/css" rel="stylesheet"/>
+        <link href="./styles/animationstyle.css" type="text/css" rel="stylesheet"/>
+        <script src="./scripts/jquery-3.5.1.js"></script>
+    </head>
+    <body id="crubble-matrix" class="bubble-matrix">
+        <!--<div class="qenclosure">-->
+            <div id="qopen"><strong>Abrir</strong></div>
+        <!--</div>-->
+        <script>
+            
+            $( "#qopen").click(function() {
+                //Open New Window with animation
+                
+                $( "#crubble-matrix" ).load("./pages/animation.html");
+                
+
+
+            });
+            
+        </script>
+    </body>
+</html>
