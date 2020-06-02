@@ -1,0 +1,27 @@
+#qopen {
+    background-color: #D3A86A;
+    border-radius: 2.1875em;
+    display: inline-block;
+    position: absolute;
+    left: 38.875em;
+    top: 18.1875em;
+    padding: 0.625em 1.875em;
+}
+
+#qopen strong {
+    color: white;
+    text-align: center;
+}
+
+#qopen {
+    cursor: pointer;
+}
+
+#qopen:hover {
+    background-color: #AB8856;
+}
+
+#qopen:hover strong {
+    color: #333;
+}
+

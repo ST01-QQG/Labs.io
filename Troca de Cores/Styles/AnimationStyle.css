@@ -1,0 +1,225 @@
+.qenclosure {
+    display: inline-block;
+    position: absolute;
+    top: 2%;
+    left: 2%;
+}
+
+#start {
+    background-color: #D3A86A;
+    border-radius: 2.1875em;
+    display: inline-block;
+    position: absolute;
+    left: 38.875em;
+    top: 18.1875em;
+    padding: 0.625em 1.875em;
+}
+
+#start strong {
+    color: white;
+    text-align: center;
+    
+}
+
+.bubble,
+#TextBubble {
+    display: none;
+    opacity: 0;
+}
+
+/*
+#EndBubble {
+    
+}
+*/
+
+.bubble {
+    padding: 0.9375em 1.125em;
+    border-radius: 3.125em;
+    text-align: center;
+    position: absolute;
+}
+
+.b1 {
+    background-color: red;
+    color: #333;
+    
+    left: 28.125em;
+    top: 4.6875em;
+}
+
+.b2 {
+    background-color: green;
+    color: #CCC;
+    
+    left: 56.25em;
+    top: 4.6875em;
+}
+
+.b3 {
+    background-color: blue;
+    color: #CCC;
+    
+    left: 28.125em;
+    top: 32.8125em;
+}
+
+.b4 {
+    background-color: black;
+    color: #CCC;
+    
+    left: 56.25em;
+    top: 32.8125em;
+}
+
+.b5,
+.b6,
+.b7 {
+    opacity: 0;
+}
+
+.b6 {
+    position: absolute;
+    left: 32.9959375em;
+    top: 15.3125em;
+    z-index: -2;
+}
+
+.b7 {
+    position: absolute;
+    left: 19.0653125em;
+    top: 11.1875em;
+    z-index: -1;
+}
+
+.b5 h3 {
+    text-align: center;
+    font-family: "verdana";
+    font-size: 1.125em;
+    position: absolute;
+    left: 28.28125em;
+    top: 14.75em;
+    color: #333;
+}
+
+/*
+.b6 h3 {
+    
+}
+*/
+
+.b6 h3,
+.b7 h3 {
+    text-align: center;
+    font-family: "verdana";
+    font-size: 1.125em;
+    color: #333;
+}
+
+.b7 h3 a {
+    text-decoration: none;
+    color: #333;
+}
+
+.b7 span {
+    cursor: pointer;
+}
+
+.b7 h3 a:hover,
+.b7 h3 span:hover {
+    color: #D3A86A;
+    text-decoration: underline;
+    transition: 300ms;
+}
+
+span#red-light:hover {
+    color: red;
+}
+
+span#blue-light:hover {
+    color: blue;
+}
+
+span#green-light:hover {
+    color: green;
+}
+
+span#black-light:hover {
+    color: black;
+}
+
+span.light:hover {
+    text-decoration: underline;
+    transition: 300ms;
+}
+
+#TextBubble span,
+#TextBubble span h3 {
+    z-index: -2;
+}
+
+.qmask {
+    width: 20.8125em;
+    height: 2.625em;
+    background-color: white;
+    z-index: -1;
+    position: absolute;
+    left: 31.78125em;
+    top: 18em;
+}
+
+.b1 strong,
+.b2 strong,
+.b3 strong,
+.b4 strong,
+.b5 strong,
+.b6 strong,
+.b7 strong {
+    position: relative;
+    /*top: 0.9375em;*/
+}
+
+#start {
+    cursor: pointer;
+}
+
+#start:hover {
+    background-color: #AB8856;
+}
+
+#start:hover strong {
+    color: #333;
+}
+
+.b1:hover,
+.b2:hover,
+.b3:hover,
+.b4:hover,
+.b5:hover {
+    cursor: pointer;
+}
+
+.qlogo h3 {
+    position: relative;
+    left: 31.7675em;
+    top: 7.8125em; /*subtracted 0.25em*/
+    opacity: 0;
+    z-index: -2;
+    display: inline-block;
+}
+
+.qlogo img {
+    position: relative;
+    left: 42.1875em;
+    top: 18.75em;
+    width: 0%;
+    height: 0%;
+    z-index: -2;
+}
+
+/*.
+b7 {
+    
+}
+/*
+
